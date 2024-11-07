@@ -1,0 +1,119 @@
+/* Container for the entire quiz component */
+.quiz-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  /* Background video styling */
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  
+  /* Main content styling */
+  .quiz-content {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Title styling */
+  .quiz-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Question styling */
+  .question-block {
+    margin-bottom: 1.5rem;
+  }
+  
+  .question-text {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .option-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .option-input {
+    margin-right: 0.5rem;
+  }
+  
+  .option-text {
+    color: #2c3e50;
+  }
+  
+  /* Buttons */
+  .submit-button,
+  .back-button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button {
+    background-color: #3498db;
+    color: #fff;
+    margin-top: 1rem;
+  }
+  
+  .submit-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .back-button {
+    background-color: #95a5a6;
+    color: #fff;
+    margin-top: 1.5rem;
+  }
+  
+  .back-button:hover {
+    background-color: #7f8c8d;
+  }
+  
+  /* Result styling */
+  .result-container {
+    text-align: center;
+  }
+  
+  .score-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #27ae60;
+  }
+  

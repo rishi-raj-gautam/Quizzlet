@@ -1,0 +1,125 @@
+/* Container for the entire Create Quiz component */
+.create-quiz-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  /* Background video styling */
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  
+  /* Content container styling */
+  .content-container {
+    background: rgba(255, 255, 255, 0.95);
+    margin: 5rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 80%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input field */
+  .input-field {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  /* Radio group */
+  .radio-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .radio-label {
+    margin: 0 0.5rem;
+  }
+  
+  /* Button styles */
+  .button-primary,
+  .button-secondary,
+  .button-back {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-primary {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .button-primary:hover {
+    background-color: #2980b9;
+  }
+  
+  .button-secondary {
+    background-color: #e67e22;
+    color: #fff;
+  }
+  
+  .button-secondary:hover {
+    background-color: #d35400;
+  }
+  
+  .button-back {
+    background-color: #95a5a6;
+    color: #fff;
+  }
+  
+  .button-back:hover {
+    background-color: #7f8c8d;
+  }
+  
+  /* Quiz ID section */
+  .quiz-id-section {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .quiz-id {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  .quiz-link {
+    color: #3498db;
+    text-decoration: underline;
+  }
+  
